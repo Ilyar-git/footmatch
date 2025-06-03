@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Футбольный Сайт</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1e25;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: space-between;
+        }
+        header {
+            background-color: #1b1b1b;
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        nav a {
+            padding: 15px 25px;
+            background-color: #9a9a9a;
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: rgb(53, 53, 53);
+        }
+        h1 {
+            margin: 20px 0;
+            font-size: 60px;
+        }
+        .content {
+            text-align: center;
+            flex: 1;
+        }
+        footer {
+            background-color: #000000;
+            padding: 10px;
+            text-align: center;
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .slide-up {
+            animation: slideUp 1s ease-in-out;
+        }
+        @keyframes slideUp {
+            0% { transform: translateY(100px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        .bg-image {
+            background-size: cover;
+            background-position: center;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="fade-in">REAL MADRID</h1>
+    </header>
+    <nav>
+        <a href="index.html">MAIN</a>
+        <a href="about.html">ABOUT</a>
+        <a href="players.html">PLAYERS</a>
+        <a href="trophies.html">TROPHIES</a>
+        <a href="matches.html">MATCHES</a>
+    </nav>
+    <div class="content bg-image" style="background-image: url('https://kartinki.pics/uploads/posts/2021-07/1625600182_7-kartinkin-com-p-futbol-temnii-fon-krasivie-foni-7.jpg');">
+        <h1 class="slide-up"></h1>
+        <p class="fade-in">История футбольного клуба REAL MADRID</p>
+    </div>
+    <footer>
+        &copy; 2024 
+    </footer>
+    </body>
+    </html>
+    
